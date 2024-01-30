@@ -1,0 +1,21 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "This is Namaste React course by Akshay Saini",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Shreya-Kolekar/namasteReact)"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Shreya",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
