@@ -1,12 +1,5 @@
-/*
- * <div id = "parent">
- *   <div id= "child">
- *       <h1>I am an h1 tag </h1>
- *       </div>
- * </div>
- */
-
-// For creating element siblings : use array
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const parent = React.createElement(
   "div",
@@ -17,7 +10,7 @@ const parent = React.createElement(
   ])
 );
 
+console.log(parent);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
 root.render(parent);
 // here render converts the obj parent into html element
