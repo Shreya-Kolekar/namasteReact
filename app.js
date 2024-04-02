@@ -1,41 +1,51 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// Most basic way
-const basic_heading = React.createElement("h1",{id : "heading"}, "Namaste React ");
+/**
+ * Header
+ *  -Logo
+ *  -Nav Items
+ * Body
+ *  - Search
+ *  - Retaurant container
+ *  - Restaunrant card
+ * Footer
+ *  -Copyright
+ *  -links
+ *  -address
+ *  -contact
+ */
 
-// React Element
-const react_heading = (
-    <h1 className="head" tabIndex="5">
-        Namaste React using JSX
-    </h1>
-);
-// root.render(react_heading);
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="logo-container">
+                <img className="logo" src="https://i.pinimg.com/564x/b0/1e/69/b01e69dfd04399324803c453b0fb9029.jpg"></img>
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    )
+};
 
-// JSX
-const jsxHeading = <h1 id="heading">Namaste React using jsx</h1>;
-// root.render(jsxHeading);
-
-// React component
-const Title = () => (
-    <h1>
-        I am the title
-    </h1>
-);
-
-// React component composition
-number = 1000;
-
-const HeadingComponent = () => (
-    <div id="container">
-        <Title/>
-        <h1>I am the heading component</h1>
-        <h2>{number}</h2>
-    </div> 
-); 
+const AppLayout = () => {
+    return (
+        <div className ="app">
+            <Header/>
+        </div>
+    )
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent/>);
+
+root.render(<AppLayout />);
+
 
 
 
